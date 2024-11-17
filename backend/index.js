@@ -6,8 +6,8 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import bodyParser from 'body-parser';
 import Connection from './database/Connection.js';
-// import Router from './routes/Route.js';
-import Router from './functions/api.js';
+import Router from './routes/Route.js';
+import path from 'path'
 
 
 // Initlizing Files
@@ -15,6 +15,7 @@ import Router from './functions/api.js';
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
 app.use(bodyParser.json({extended : true}));
 app.use(bodyParser.urlencoded({extended : true}))
 dotenv.config();
