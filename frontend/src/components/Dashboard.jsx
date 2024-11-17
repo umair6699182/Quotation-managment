@@ -197,6 +197,30 @@ const Dashboard = () => {
               system.
             </div>
           )}
+          {isDashboardRoute && (
+            <div className="alert alert-info" role="alert">
+              Welcome to the Dashboard! Here you can manage all aspects of the
+              system.
+            </div>
+          )}
+          {isDashboardRoute && (
+            <div className="alert alert-info" role="alert">
+              Welcome to the Dashboard! Here you can manage all aspects of the
+              system.
+            </div>
+          )}
+          {isDashboardRoute && (
+            <div className="alert alert-info" role="alert">
+              Welcome to the Dashboard! Here you can manage all aspects of the
+              system.
+            </div>
+          )}
+          {isDashboardRoute && (
+            <div className="alert alert-info" role="alert">
+              Welcome to the Dashboard! Here you can manage all aspects of the
+              system.
+            </div>
+          )}
 
           {/* This will render dynamic content based on the selected route */}
           <Outlet />
